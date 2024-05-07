@@ -1,0 +1,15 @@
+﻿@model Employee
+<h1> <span class="text-danger"> @ViewBag.Message    </span></h1>
+<form asp-action="SignIn" asp-controller="Employee" method="post">
+    <div>
+        <input asp-for="FirstName" />
+    </div>
+
+    <div>
+        <input asp-for="LastName" />
+    </div>
+
+    <button class="btn btn-primary">
+        SignIn
+    </button>
+</form>

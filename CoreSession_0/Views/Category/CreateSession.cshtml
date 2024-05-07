@@ -1,0 +1,9 @@
+﻿@{
+    //razorview actık.
+    Category c = Context.Session.GetObject<Category>("cagri");
+    //getobject, extension metoddaki session yakalayan metod.
+
+    <h1>Elimizdeki session verisi @c.CategoryName</h1>
+
+
+}
